@@ -8,6 +8,11 @@ class Visitors:
     def get_list(self):
         return print(f"Посетитель {self.name}, г. {self.city}, статус `{self.status}`")
 
+    def get_status(self):
+         if self.status == "наставник":
+             return True
+
+
 
 class Clients(Visitors):
 
